@@ -1,4 +1,5 @@
 import SimpleSlider from "../components/slick/slider";
+import List from "../components/list";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <p>Zakázková výroba, oprava nábytku a automotive potahů.</p>
       </div>
       <SimpleSlider />
+      <List />
     </div>
   );
 }

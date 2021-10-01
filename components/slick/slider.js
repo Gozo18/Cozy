@@ -21,6 +21,7 @@ function SimpleSlider() {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          arrows: false,
         },
       },
     ],
@@ -40,19 +41,12 @@ function SimpleSlider() {
                   objectFit="cover"
                 />
               </div>
-            </div>
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <div className={styles.sliderItem}>
-              <div className={styles.sliderImage}>
-                <Image
-                  src="/chair.jpg"
-                  alt="Cozy Buddy Logo"
-                  layout="fill"
-                  objectFit="cover"
-                />
+              <div className={styles.sliderGlass}>
+                <h3>Židle s koženkou</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Nulla non lectus sed nisl molestie malesuada. In convallis.
+                </p>
               </div>
             </div>
           </a>
@@ -68,19 +62,12 @@ function SimpleSlider() {
                   objectFit="cover"
                 />
               </div>
-            </div>
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <div className={styles.sliderItem}>
-              <div className={styles.sliderImage}>
-                <Image
-                  src="/chair.jpg"
-                  alt="Cozy Buddy Logo"
-                  layout="fill"
-                  objectFit="cover"
-                />
+              <div className={styles.sliderGlass}>
+                <h3>Židle s koženkou</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Nulla non lectus sed nisl molestie malesuada. In convallis.
+                </p>
               </div>
             </div>
           </a>
@@ -96,6 +83,13 @@ function SimpleSlider() {
                   objectFit="cover"
                 />
               </div>
+              <div className={styles.sliderGlass}>
+                <h3>Židle s koženkou</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Nulla non lectus sed nisl molestie malesuada. In convallis.
+                </p>
+              </div>
             </div>
           </a>
         </Link>
@@ -109,6 +103,55 @@ function SimpleSlider() {
                   layout="fill"
                   objectFit="cover"
                 />
+              </div>
+              <div className={styles.sliderGlass}>
+                <h3>Židle s koženkou</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Nulla non lectus sed nisl molestie malesuada. In convallis.
+                </p>
+              </div>
+            </div>
+          </a>
+        </Link>
+        <Link href="/">
+          <a>
+            <div className={styles.sliderItem}>
+              <div className={styles.sliderImage}>
+                <Image
+                  src="/chair.jpg"
+                  alt="Cozy Buddy Logo"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div className={styles.sliderGlass}>
+                <h3>Židle s koženkou</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Nulla non lectus sed nisl molestie malesuada. In convallis.
+                </p>
+              </div>
+            </div>
+          </a>
+        </Link>
+        <Link href="/">
+          <a>
+            <div className={styles.sliderItem}>
+              <div className={styles.sliderImage}>
+                <Image
+                  src="/chair.jpg"
+                  alt="Cozy Buddy Logo"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div className={styles.sliderGlass}>
+                <h3>Židle s koženkou</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Nulla non lectus sed nisl molestie malesuada. In convallis.
+                </p>
               </div>
             </div>
           </a>

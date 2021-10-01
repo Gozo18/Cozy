@@ -8,6 +8,11 @@ body {
   font-weight: 300;
   color: #4e5463;
   background-color: #f7f7f7;
+  font-size: 1rem;
+
+  @media (max-width: 991px) {
+    font-size: 0.9rem;
+  }
 }
 
 a {
@@ -37,5 +42,11 @@ h1 {
 h2 {
   @media (max-width: 991px) {
     font-size: 1rem;
+  }
+}
+
+h3 {
+  @media (max-width: 991px) {
+    font-size: 0.8rem;
   }
 }

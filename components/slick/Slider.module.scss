@@ -1,5 +1,10 @@
 .sliderBlock {
+  margin-bottom: 80px;
   width: 100%;
+
+  @media (max-width: 991px) {
+    margin-bottom: 50px;
+  }
 
   h2 {
     text-align: center;
@@ -7,14 +12,10 @@
 }
 
 .sliderItem {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 0 15px;
-
-  a {
-    position: relative;
-    width: 100%;
-  }
 }
 
 .sliderImage {
@@ -30,5 +31,26 @@
     max-width: 100%;
     max-height: 100%;
     border-radius: 8px;
+  }
+}
+
+.sliderGlass {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  width: 90%;
+  height: 35%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+
+  h3,
+  p {
+    margin: 0;
   }
 }
