@@ -21,18 +21,24 @@ function MainHeader() {
         </Link>
       </div>
       <nav className={styles.links}>
-        <span>
-          <IoHomeOutline />
-          <span>Domů</span>
-        </span>
-        <span>
-          <IoAlbumsOutline />
-          <span>Naše práce</span>
-        </span>
-        <span>
-          <IoPersonOutline />
-          <span>Kontakty</span>
-        </span>
+        <Link href="/">
+          <a>
+            <IoHomeOutline />
+            <span>Domů</span>
+          </a>
+        </Link>
+        <Link href="/naseprace">
+          <a>
+            <IoAlbumsOutline />
+            <span>Naše práce</span>
+          </a>
+        </Link>
+        <Link href="/kontakty">
+          <a>
+            <IoPersonOutline />
+            <span>Kontakty</span>
+          </a>
+        </Link>
       </nav>
     </header>
   );

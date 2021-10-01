@@ -10,7 +10,7 @@ function List() {
         <div className={styles.listImage}>
           <Image
             src="/chair.jpg"
-            alt="Cozy Buddy Logo"
+            alt="Cozy Buddy"
             layout="fill"
             objectFit="cover"
           />
