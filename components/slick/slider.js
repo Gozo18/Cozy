@@ -30,7 +30,7 @@ function SimpleSlider() {
     <div className={styles.sliderBlock}>
       <h2>Naše práce</h2>
       <Slider {...settings}>
-        <Link href="/">
+        <Link href="/detail">
           <a>
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>
@@ -51,7 +51,7 @@ function SimpleSlider() {
             </div>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/detail">
           <a>
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>
@@ -72,7 +72,7 @@ function SimpleSlider() {
             </div>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/detail">
           <a>
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>
@@ -93,7 +93,7 @@ function SimpleSlider() {
             </div>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/detail">
           <a>
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>
@@ -114,7 +114,7 @@ function SimpleSlider() {
             </div>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/detail">
           <a>
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>
@@ -135,7 +135,7 @@ function SimpleSlider() {
             </div>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/detail">
           <a>
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>

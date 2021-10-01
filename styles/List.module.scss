@@ -32,4 +32,13 @@
   p {
     margin: 0;
   }
+
+  span {
+    font-weight: 500;
+
+    svg {
+      position: relative;
+      top: 2px;
+    }
+  }
 }
