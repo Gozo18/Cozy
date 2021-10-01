@@ -10,13 +10,15 @@ export default function Ourjobs() {
         <p>Zakázková výroba, oprava nábytku a automotive potahů.</p>
       </div>
       <div className={styles.contactBox}>
-        <div className={styles.contactImage}>
-          <Image
-            src="/misha.png"
-            alt="Cozy Buddy"
-            layout="fill"
-            objectFit="cover"
-          />
+        <div className={styles.contactImageBox}>
+          <div className={styles.contactImage}>
+            <Image
+              src="/mishaOfi.png"
+              alt="Cozy Buddy"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </div>
         <div className={styles.contacts}>
           <div>telefon:</div>

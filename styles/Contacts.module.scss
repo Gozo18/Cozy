@@ -13,9 +13,14 @@
   margin: 30px 0;
 }
 
+.contactImageBox {
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+  border-radius: 150px;
+}
+
 .contactImage {
   position: relative;
-  margin-bottom: 30px;
   width: 180px;
   height: 180px;
   background-color: #fff;
@@ -24,7 +29,11 @@
 }
 
 .contacts {
+  padding: 5%;
   width: 100%;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
 
   div {
     margin-bottom: 5px;
