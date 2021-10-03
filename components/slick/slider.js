@@ -56,14 +56,14 @@ function SimpleSlider() {
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>
                 <Image
-                  src="/chair.jpg"
+                  src="/sofa.jpg"
                   alt="Cozy Buddy Logo"
                   layout="fill"
                   objectFit="cover"
                 />
               </div>
               <div className={styles.sliderGlass}>
-                <h3>Židle s koženkou</h3>
+                <h3>Sedačka</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Nulla non lectus sed nisl molestie malesuada. In convallis.
@@ -98,14 +98,14 @@ function SimpleSlider() {
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>
                 <Image
-                  src="/chair.jpg"
+                  src="/sofa.jpg"
                   alt="Cozy Buddy Logo"
                   layout="fill"
                   objectFit="cover"
                 />
               </div>
               <div className={styles.sliderGlass}>
-                <h3>Židle s koženkou</h3>
+                <h3>Sedačka</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Nulla non lectus sed nisl molestie malesuada. In convallis.
@@ -140,14 +140,14 @@ function SimpleSlider() {
             <div className={styles.sliderItem}>
               <div className={styles.sliderImage}>
                 <Image
-                  src="/chair.jpg"
+                  src="/sofa.jpg"
                   alt="Cozy Buddy Logo"
                   layout="fill"
                   objectFit="cover"
                 />
               </div>
               <div className={styles.sliderGlass}>
-                <h3>Židle s koženkou</h3>
+                <h3>Sedačka</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Nulla non lectus sed nisl molestie malesuada. In convallis.
