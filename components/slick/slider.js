@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import styles from "./Slider.module.scss";
 
-function SimpleSlider(offers) {
+function SimpleSlider({ offers }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -27,20 +27,16 @@ function SimpleSlider(offers) {
     ],
   };
 
-  const offs = offers.offers;
-
   return (
     <div className={styles.sliderBlock}>
       <Slider {...settings}>
-        {offs.map((off) => (
+        {offers.map((off) => (
           <Link href={`/${off.slug}`} key={off.id}>
             <a>
               <div className={styles.sliderItem}>
                 <span className={styles.sliderImage}>
                   <Image
-                    src={
-                      off.image ? off.image.formats.small.url : "/CB-cap.jpg"
-                    }
+                    src={off.image ? off.image.url : "/CB-cap.jpg"}
                     alt="Cozy Buddy Logo"
                     layout="fill"
                     objectFit="contain"
