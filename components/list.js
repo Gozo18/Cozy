@@ -2,78 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoChevronForward } from "react-icons/io5";
 
-import styles from "../styles/List.module.scss";
+import styles from "@/styles/List.module.scss";
 
-function List() {
+function List(creation) {
+  const cre = creation.creation;
+
   return (
-    <div className={styles.listBox}>
-      <Link href="/detail">
-        <a className={styles.listItem}>
-          <div className={styles.listImage}>
-            <Image
-              src="/sofa.jpg"
-              alt="Cozy Buddy"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className={styles.listText}>
-            <h3>Sedačka</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla
-              non lectus sed nisl molestie malesuada. In convallis.{" "}
-              <span>
-                Detail <IoChevronForward />
-              </span>
-            </p>
-          </div>
-        </a>
-      </Link>
-      <Link href="/detail">
-        <a className={styles.listItem}>
-          <div className={styles.listImage}>
-            <Image
-              src="/chair.jpg"
-              alt="Cozy Buddy Logo"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className={styles.listText}>
-            <h3>Židle s koženkou</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla
-              non lectus sed nisl molestie malesuada. In convallis.{" "}
-              <span>
-                Detail <IoChevronForward />
-              </span>
-            </p>
-          </div>
-        </a>
-      </Link>
-      <Link href="/detail">
-        <a className={styles.listItem}>
-          <div className={styles.listImage}>
-            <Image
-              src="/sofa.jpg"
-              alt="Cozy Buddy Logo"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className={styles.listText}>
-            <h3>Sedačka</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla
-              non lectus sed nisl molestie malesuada. In convallis.{" "}
-              <span>
-                Detail <IoChevronForward />
-              </span>
-            </p>
-          </div>
-        </a>
-      </Link>
-    </div>
+    <Link href={`/nase-prace/${cre.slug}`}>
+      <a className={styles.listItem}>
+        <span className={styles.listImage}>
+          <Image
+            src={cre.image ? cre.image.formats.small.url : "/CB-cap.jpg"}
+            alt="Cozy Buddy"
+            layout="fill"
+            objectFit="contain"
+          />
+        </span>
+        <div className={styles.listText}>
+          <h3>{cre.name}</h3>
+          <p>
+            {cre.description.substring(0, 95)}
+            {cre.description.length >= 95 && `...`}
+            <span className={styles.moreLink}>
+              více <IoChevronForward />
+            </span>
+          </p>
+        </div>
+      </a>
+    </Link>
   );
 }
 

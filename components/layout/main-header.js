@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoAlbumsOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
-import styles from "../../styles/Header.module.scss";
+import styles from "@/styles/Header.module.scss";
 
 function MainHeader() {
   return (
@@ -27,7 +27,7 @@ function MainHeader() {
             <span>Domů</span>
           </a>
         </Link>
-        <Link href="/naseprace">
+        <Link href="/nase-prace">
           <a>
             <IoAlbumsOutline />
             <span>Naše práce</span>

@@ -2,6 +2,19 @@
   margin: 1rem 5%;
 }
 
-.homeHeader {
+.homeHeader,
+.subheader {
   text-align: center;
+}
+
+.homeHeader {
+  margin-bottom: 30px;
+}
+
+.subheader {
+  margin: 30px 0 20px;
+}
+
+.listBox {
+  width: 100%;
 }

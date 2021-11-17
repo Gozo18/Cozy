@@ -1,0 +1,48 @@
+.container {
+  margin: 1rem 5%;
+}
+
+.auth {
+  max-width: 500px;
+  margin: 70px auto;
+  padding: 30px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #fff;
+
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #4e5463 !important;
+    color: #fff;
+  }
+
+  div {
+    margin-bottom: 20px;
+  }
+}

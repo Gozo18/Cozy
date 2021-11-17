@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import styles from "./Slider.module.scss";
 
-function SimpleSlider() {
+function SimpleSlider(offers) {
   const settings = {
     dots: true,
     infinite: true,
@@ -26,136 +26,35 @@ function SimpleSlider() {
       },
     ],
   };
+
+  const offs = offers.offers;
+
   return (
     <div className={styles.sliderBlock}>
-      <h2>Naše práce</h2>
       <Slider {...settings}>
-        <Link href="/detail">
-          <a>
-            <div className={styles.sliderItem}>
-              <div className={styles.sliderImage}>
-                <Image
-                  src="/chair.jpg"
-                  alt="Cozy Buddy Logo"
-                  layout="fill"
-                  objectFit="cover"
-                />
+        {offs.map((off) => (
+          <Link href={`/${off.slug}`} key={off.id}>
+            <a>
+              <div className={styles.sliderItem}>
+                <span className={styles.sliderImage}>
+                  <Image
+                    src={
+                      off.image ? off.image.formats.small.url : "/CB-cap.jpg"
+                    }
+                    alt="Cozy Buddy Logo"
+                    layout="fill"
+                    objectFit="contain"
+                    priority
+                  />
+                </span>
+                <div className={styles.sliderGlass}>
+                  <h3>{off.name}</h3>
+                  <p>{off.perex}</p>
+                </div>
               </div>
-              <div className={styles.sliderGlass}>
-                <h3>Židle s koženkou</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Nulla non lectus sed nisl molestie malesuada. In convallis.
-                </p>
-              </div>
-            </div>
-          </a>
-        </Link>
-        <Link href="/detail">
-          <a>
-            <div className={styles.sliderItem}>
-              <div className={styles.sliderImage}>
-                <Image
-                  src="/sofa.jpg"
-                  alt="Cozy Buddy Logo"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className={styles.sliderGlass}>
-                <h3>Sedačka</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Nulla non lectus sed nisl molestie malesuada. In convallis.
-                </p>
-              </div>
-            </div>
-          </a>
-        </Link>
-        <Link href="/detail">
-          <a>
-            <div className={styles.sliderItem}>
-              <div className={styles.sliderImage}>
-                <Image
-                  src="/chair.jpg"
-                  alt="Cozy Buddy Logo"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className={styles.sliderGlass}>
-                <h3>Židle s koženkou</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Nulla non lectus sed nisl molestie malesuada. In convallis.
-                </p>
-              </div>
-            </div>
-          </a>
-        </Link>
-        <Link href="/detail">
-          <a>
-            <div className={styles.sliderItem}>
-              <div className={styles.sliderImage}>
-                <Image
-                  src="/sofa.jpg"
-                  alt="Cozy Buddy Logo"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className={styles.sliderGlass}>
-                <h3>Sedačka</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Nulla non lectus sed nisl molestie malesuada. In convallis.
-                </p>
-              </div>
-            </div>
-          </a>
-        </Link>
-        <Link href="/detail">
-          <a>
-            <div className={styles.sliderItem}>
-              <div className={styles.sliderImage}>
-                <Image
-                  src="/chair.jpg"
-                  alt="Cozy Buddy Logo"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className={styles.sliderGlass}>
-                <h3>Židle s koženkou</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Nulla non lectus sed nisl molestie malesuada. In convallis.
-                </p>
-              </div>
-            </div>
-          </a>
-        </Link>
-        <Link href="/detail">
-          <a>
-            <div className={styles.sliderItem}>
-              <div className={styles.sliderImage}>
-                <Image
-                  src="/sofa.jpg"
-                  alt="Cozy Buddy Logo"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className={styles.sliderGlass}>
-                <h3>Sedačka</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Nulla non lectus sed nisl molestie malesuada. In convallis.
-                </p>
-              </div>
-            </div>
-          </a>
-        </Link>
+            </a>
+          </Link>
+        ))}
       </Slider>
     </div>
   );

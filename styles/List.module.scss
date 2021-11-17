@@ -33,12 +33,19 @@
     margin: 0;
   }
 
-  span {
-    font-weight: 500;
+  h3 {
+    margin-bottom: 5px;
+  }
+}
 
-    svg {
-      position: relative;
-      top: 2px;
-    }
+.moreLink {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-weight: 500;
+
+  svg {
+    position: relative;
+    top: 2px;
   }
 }

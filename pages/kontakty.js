@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "../styles/Contacts.module.scss";
+import styles from "@/styles/Contacts.module.scss";
 
 export default function Ourjobs() {
   return (
