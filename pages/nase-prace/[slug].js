@@ -40,16 +40,16 @@ export default function Detail({ creation }) {
           <div onClick={() => router.back()} className={styles.backButton}>
             {"<"} Zpět
           </div>
-          <div className={styles.controls}>
+          {/* <div className={styles.controls}>
             <Link href={`/nase-prace/edit/${creation.id}`}>
               <a>
                 <IoPencilSharp /> Upravit
               </a>
             </Link>
-            {/* <a href="#" className={styles.delete} onClick={deleteEvent}>
+            <a href="#" className={styles.delete} onClick={deleteEvent}>
               <IoCloseSharp /> Smazat
-            </a> */}
-          </div>
+            </a>
+          </div> */}
         </div>
       </div>
       <ToastContainer
