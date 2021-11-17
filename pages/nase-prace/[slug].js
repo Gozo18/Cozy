@@ -95,7 +95,7 @@ export default function Detail(creation) {
   );
 }
 
-export async function getStaticPaths() {
+/* export async function getStaticPaths() {
   const res = await fetch(`${API_URL}/creations`);
   const creations = await res.json();
 
@@ -107,7 +107,7 @@ export async function getStaticPaths() {
     paths,
     fallback: true,
   };
-}
+} */
 
 /* export async function getStaticProps({ params: { slug } }) {
   const res = await fetch(`${API_URL}/creations?slug=${slug}`);

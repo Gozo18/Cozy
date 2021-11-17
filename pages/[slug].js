@@ -61,7 +61,7 @@ export default function Detail(offer) {
   );
 }
 
-export async function getStaticPaths() {
+/* export async function getStaticPaths() {
   const res = await fetch(`${API_URL}/offers`);
   const offers = await res.json();
 
@@ -73,7 +73,7 @@ export async function getStaticPaths() {
     paths,
     fallback: true,
   };
-}
+} */
 
 /* export async function getStaticProps({ params: { slug } }) {
   const res = await fetch(`${API_URL}/offers?slug=${slug}`);
