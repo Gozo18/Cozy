@@ -9,9 +9,7 @@ import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
-export default function Detail(creation) {
-  const cre = creation.creation;
-
+export default function Detail({ creation }) {
   const router = useRouter();
 
   /* const deleteEvent = async (e) => {
@@ -43,7 +41,7 @@ export default function Detail(creation) {
             {"<"} Zpět
           </div>
           <div className={styles.controls}>
-            <Link href={`/nase-prace/edit/${cre.id}`}>
+            <Link href={`/nase-prace/edit/${creation.id}`}>
               <a>
                 <IoPencilSharp /> Upravit
               </a>
@@ -67,7 +65,7 @@ export default function Detail(creation) {
       />
       <span className={styles.detailImage}>
         <Image
-          src={cre.image ? cre.image.formats.small.url : "/CB-cap.jpg"}
+          src={creation.image ? creation.image.url : "/CB-cap.jpg"}
           alt="Cozy Buddy"
           layout="fill"
           objectFit="contain"
@@ -75,14 +73,14 @@ export default function Detail(creation) {
       </span>
       <div className={styles.container}>
         <div className={styles.detailText}>
-          <h1>{cre.name}</h1>
-          <p>{cre.description}</p>
+          <h1>{creation.name}</h1>
+          <p>{creation.description}</p>
         </div>
         <div className={styles.detailGallery}>
-          {cre.gallery.map((img) => (
+          {creation.gallery.map((img) => (
             <span className={styles.detailGalleryImage} key={img.id}>
               <Image
-                src={img.formats.small.url}
+                src={img.url}
                 alt="Cozy Buddy"
                 layout="fill"
                 objectFit="contain"

@@ -7,9 +7,7 @@ import styles from "@/styles/Detail.module.scss";
 import { API_URL } from "@/config/index";
 import { useRouter } from "next/router";
 
-export default function Detail(offer) {
-  const off = offer.offer;
-
+export default function Detail({ creation }) {
   const router = useRouter();
 
   return (
@@ -33,7 +31,7 @@ export default function Detail(offer) {
       </div>
       <span className={styles.detailImage}>
         <Image
-          src={off.image ? off.image.formats.small.url : "/CB-cap.jpg"}
+          src={creation.image ? creation.image.url : "/CB-cap.jpg"}
           alt="Cozy Buddy"
           layout="fill"
           objectFit="contain"
@@ -41,14 +39,14 @@ export default function Detail(offer) {
       </span>
       <div className={styles.container}>
         <div className={styles.detailText}>
-          <h3>{off.name}</h3>
-          <p>{off.perex}</p>
+          <h3>{creation.name}</h3>
+          <p>{creation.perex}</p>
         </div>
         <div className={styles.detailGallery}>
-          {off.gallery.map((img) => (
+          {creation.gallery.map((img) => (
             <span className={styles.detailGalleryImage} key={img.id}>
               <Image
-                src={img.formats.small.url}
+                src={img.url}
                 alt="Cozy Buddy"
                 layout="fill"
                 objectFit="contain"
