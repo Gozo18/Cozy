@@ -75,7 +75,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: { slug } }) {
+/* export async function getStaticProps({ params: { slug } }) {
   const res = await fetch(`${API_URL}/offers?slug=${slug}`);
   const offers = await res.json();
 
@@ -84,5 +84,16 @@ export async function getStaticProps({ params: { slug } }) {
       offer: offers[0],
     },
     revalidate: 1,
+  };
+} */
+
+export async function getServerSideProps({ query: { slug } }) {
+  const res = await fetch(`${API_URL}/offers?slug=${slug}`);
+  const offers = await res.json();
+
+  return {
+    props: {
+      creation: offers[0],
+    },
   };
 }
