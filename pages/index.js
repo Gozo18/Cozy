@@ -30,7 +30,7 @@ export async function getStaticProps() {
   const res1 = await fetch(`${API_URL}/creations?_sort=date:DESC&_limit=3`);
   const creations = await res1.json();
 
-  const res2 = await fetch(`${API_URL}/offers`);
+  const res2 = await fetch(`${API_URL}/offers?_sort=id:ASC`);
   const offers = await res2.json();
 
   return {
