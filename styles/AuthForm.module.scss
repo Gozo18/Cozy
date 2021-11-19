@@ -12,6 +12,10 @@
   border-radius: 8px;
   background-color: $white;
 
+  a {
+    text-decoration: underline;
+  }
+
   h1 {
     text-align: center;
   }
@@ -42,6 +46,7 @@
     border-radius: 8px;
     background-color: $main !important;
     color: $white;
+    cursor: pointer;
   }
 
   div {
