@@ -1,10 +1,12 @@
+@import "./variables.scss";
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 5%;
 
-  @media (max-width: 991px) {
+  @media (max-width: $md) {
     justify-content: center;
 
     img {
@@ -19,7 +21,7 @@
   width: 50%;
   font-size: 2rem;
 
-  @media (max-width: 991px) {
+  @media (max-width: $md) {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -40,13 +42,13 @@
   align-items: center;
   margin-left: 5%;
 
-  @media (max-width: 991px) {
+  @media (max-width: $md) {
     flex-direction: column;
     margin-left: 0;
     width: 28%;
     font-size: 1rem;
-    background-color: #fff;
-    border: 1px solid #eaeaea;
+    background-color: $white;
+    border: 1px solid $border;
     border-radius: 8px;
   }
 
@@ -54,7 +56,7 @@
     display: block;
     font-size: 2rem;
 
-    @media (max-width: 991px) {
+    @media (max-width: $md) {
       font-size: 1.4rem;
     }
   }
@@ -63,7 +65,7 @@
     display: block;
     font-size: 0.9rem;
 
-    @media (max-width: 991px) {
+    @media (max-width: $md) {
       width: 100%;
       font-size: 0.6rem;
       text-align: center;

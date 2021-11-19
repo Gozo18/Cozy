@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .paginationBox {
   margin-bottom: 70px;
   float: right;
@@ -6,8 +8,8 @@
 .paginationLink {
   padding: 5px 15px;
   height: 40px;
-  border: 1px solid #eaeaea;
+  border: 1px solid $border;
   border-radius: 8px;
-  background-color: #4e5463 !important;
-  color: #fff;
+  background-color: $main !important;
+  color: $white;
 }

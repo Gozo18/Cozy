@@ -21,7 +21,7 @@ export default function EditCreatinPage({ cre, token }) {
   });
 
   const [imagePreview, setImagePreview] = useState(
-    cre.image ? cre.image.formats.thumbnail.url : null
+    cre.image ? cre.image.url : null
   );
 
   const [imageGalleryPreview, setImageGalleryPreview] = useState(
@@ -78,7 +78,7 @@ export default function EditCreatinPage({ cre, token }) {
   const imageUploaded = async (e) => {
     const res = await fetch(`${API_URL}/creations/${cre.id}`);
     const data = await res.json();
-    setImagePreview(data.image.formats.thumbnail.url);
+    setImagePreview(data.image.url);
     setShowModal(false);
   };
 
@@ -87,7 +87,6 @@ export default function EditCreatinPage({ cre, token }) {
     const data = await res.json();
     setImageGalleryPreview(data.gallery);
     setShowModal(false);
-    console.log(data);
   };
 
   if (!showModal) {
@@ -163,7 +162,7 @@ export default function EditCreatinPage({ cre, token }) {
       {imageGalleryPreview ? (
         imageGalleryPreview.map((img) => (
           <span className={styles.detailGalleryImage} key={img.id}>
-            <Image src={img.formats.small.url} height={100} width={170} />
+            <Image src={img.url} height={100} width={170} />
           </span>
         ))
       ) : (
@@ -209,8 +208,6 @@ export async function getServerSideProps({ params: { id }, req }) {
 
   const res = await fetch(`${API_URL}/creations/${id}`);
   const cre = await res.json();
-
-  console.log(req.headers.cookie);
 
   return {
     props: {

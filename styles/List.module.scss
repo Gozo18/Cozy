@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .listBox {
   width: 100%;
 }
@@ -5,8 +7,8 @@
 .listItem {
   display: flex;
   margin-bottom: 30px;
-  background-color: #fff;
-  border: 1px solid #eaeaea;
+  background-color: $white;
+  border: 1px solid $border;
   border-radius: 8px;
 }
 
@@ -15,7 +17,7 @@
   width: 35%;
   height: 220px;
 
-  @media (max-width: 991px) {
+  @media (max-width: $md) {
     height: 130px;
   }
 

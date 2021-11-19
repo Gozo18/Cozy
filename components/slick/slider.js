@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./Slider.module.scss";
+import styles from "@/styles/Slider.module.scss";
 
 function SimpleSlider({ offers }) {
   const settings = {
