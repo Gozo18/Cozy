@@ -3,7 +3,6 @@ import { IoPencilSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import { API_URL } from "@/config/index";
 import { useRouter } from "next/router";
-import useSWR from "swr";
 
 import styles from "@/styles/Detail.module.scss";
 
