@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { IoPencilSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
-
-import styles from "@/styles/Detail.module.scss";
-
 import { API_URL } from "@/config/index";
 import { useRouter } from "next/router";
+import useSWR from "swr";
+
+import styles from "@/styles/Detail.module.scss";
 
 export default function Detail({ creation }) {
   const router = useRouter();
@@ -59,7 +59,7 @@ export default function Detail({ creation }) {
   );
 }
 
-/* export async function getStaticPaths() {
+export async function getStaticPaths() {
   const res = await fetch(`${API_URL}/offers`);
   const offers = await res.json();
 
@@ -71,21 +71,21 @@ export default function Detail({ creation }) {
     paths,
     fallback: true,
   };
-} */
+}
 
-/* export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ params: { slug } }) {
   const res = await fetch(`${API_URL}/offers?slug=${slug}`);
   const offers = await res.json();
 
   return {
     props: {
-      offer: offers[0],
+      creation: offers[0],
     },
     revalidate: 1,
   };
-} */
+}
 
-export async function getServerSideProps({ query: { slug } }) {
+/* export async function getServerSideProps({ query: { slug } }) {
   const res = await fetch(`${API_URL}/offers?slug=${slug}`);
   const offers = await res.json();
 
@@ -94,4 +94,4 @@ export async function getServerSideProps({ query: { slug } }) {
       creation: offers[0],
     },
   };
-}
+} */
