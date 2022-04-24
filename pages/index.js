@@ -27,7 +27,7 @@ export default function Home({ creations, offers }) {
 }
 
 export async function getStaticProps() {
-  const res1 = await fetch(`${API_URL}/creations?_sort=date:DESC&_limit=3`);
+  const res1 = await fetch(`${API_URL}/creations?_sort=date:DESC&_limit=4`);
   const creations = await res1.json();
 
   const res2 = await fetch(`${API_URL}/offers?_sort=id:ASC`);

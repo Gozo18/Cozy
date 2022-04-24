@@ -17,4 +17,10 @@
 
 .listBox {
   width: 100%;
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
 }

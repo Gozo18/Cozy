@@ -11,20 +11,21 @@ function List({ creation }) {
         <span className={styles.listImage}>
           <Image
             src={creation.image ? creation.image.url : "/CB-cap.jpg"}
-            alt="Cozy Buddy"
-            layout="fill"
-            objectFit="contain"
+            alt='Cozy Buddy'
+            layout='fill'
+            objectFit='contain'
           />
         </span>
         <div className={styles.listText}>
           <h3>{creation.name}</h3>
           <p>
-            {creation.description.substring(0, 95)}
-            {creation.description.length >= 95 && `...`}
-            <span className={styles.moreLink}>
-              více <IoChevronForward />
-            </span>
+            {creation.description}
+            {/* {creation.description.substring(0, 95)}
+            {creation.description.length >= 95 && `...`} */}
           </p>
+          <span className={styles.moreLink}>
+            více <IoChevronForward />
+          </span>
         </div>
       </a>
     </Link>

@@ -15,7 +15,7 @@ function SimpleSlider({ offers }) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -37,9 +37,9 @@ function SimpleSlider({ offers }) {
                 <span className={styles.sliderImage}>
                   <Image
                     src={off.image ? off.image.url : "/CB-cap.jpg"}
-                    alt="Cozy Buddy Logo"
-                    layout="fill"
-                    objectFit="contain"
+                    alt='Cozy Buddy Logo'
+                    layout='fill'
+                    objectFit='contain'
                     priority
                   />
                 </span>
