@@ -52,3 +52,21 @@ h3 {
     font-size: 0.9rem;
   }
 }
+
+element.style {
+  display: block;
+}
+.slick-next {
+  right: -25px;
+}
+.slick-prev,
+.slick-next {
+  border: 1px solid $border !important;
+  border-radius: 20px;
+  color: #000 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: $main !important;
+}
