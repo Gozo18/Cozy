@@ -11,13 +11,13 @@ function MyApp({ Component, pageProps }) {
         <Head>
           <title>Cozy Buddy</title>
           <meta
-            name="description"
-            content="Cozy Buddy - čalounictví a nábytek. Zakázková výroba, oprava nábytku a automotive potahů."
+            name='description'
+            content='Cozy Buddy - čalounictví a nábytek. Zakázková výroba, oprava nábytku a automotive potahů.'
           />
-          <meta httpEquiv="content-language" content="cs" />
-          <link rel="icon" href="/favicon.ico" />
+          <meta httpEquiv='content-language' content='cs' />
+          <link rel='icon' href='/favicon.ico' />
         </Head>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </Layout>
     </AuthProvider>
   );
