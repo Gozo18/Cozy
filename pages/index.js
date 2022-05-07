@@ -2,14 +2,12 @@ import SimpleSlider from "@/components/slick/slider";
 import List from "@/components/list";
 import styles from "@/styles/Home.module.scss";
 import { API_URL } from "@/config/index";
+import Heading from "../components/Heading";
 
 export default function Home({ creations, offers }) {
   return (
     <div className={styles.container}>
-      <div className={styles.homeHeader}>
-        <h1>Výroba a oprava čalouněného nábytku</h1>
-        <p>Zakázková výroba, oprava nábytku a automotive potahů.</p>
-      </div>
+      <Heading />
       <SimpleSlider offers={offers} />
 
       {creations.length === 0 && (

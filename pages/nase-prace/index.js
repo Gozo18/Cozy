@@ -2,16 +2,14 @@ import List from "@/components/list";
 import styles from "@/styles/Home.module.scss";
 import { API_URL, PER_PAGE } from "@/config/index";
 import Pagination from "@/components/Pagination";
+import Heading from "../../components/Heading";
 
 export default function CreationPage({ creations, page, total }) {
   const cres = creations;
 
   return (
     <div className={styles.container}>
-      <div className={styles.homeHeader}>
-        <h1>Výroba a oprava čalouněného nábytku</h1>
-        <p>Zakázková výroba, oprava nábytku a automotive potahů.</p>
-      </div>
+      <Heading />
 
       {creations.length === 0 && <h3>Žádné zakázky</h3>}
 

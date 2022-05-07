@@ -44,7 +44,16 @@
 
     &:nth-child(odd) {
       font-weight: 400;
-      margin-bottom: 30px;
+    }
+
+    &:nth-child(even) {
+      margin-bottom: 40px;
+    }
+
+    svg {
+      position: relative;
+      top: 3px;
+      margin-right: 5px;
     }
   }
 
