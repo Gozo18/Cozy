@@ -9,11 +9,11 @@ body {
   font-family: "Montserrat", sans-serif;
   color: $main;
   background-color: $bg;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   /* font-weight: 600; */
 
   @media (max-width: $md) {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
