@@ -16,13 +16,15 @@
     @media (max-width: $md) {
       margin-bottom: 40px;
     }
-
-    a {
-      text-decoration: underline;
-    }
   }
 }
 
 .addLink {
   margin-top: 20px;
+  font-size: 1rem;
+  text-decoration: underline;
+
+  @media (max-width: $md) {
+    font-size: 0.8rem;
+  }
 }

@@ -16,8 +16,8 @@ function MainFooter() {
             <Image
               src='/CB.svg'
               alt='Cozy Buddy Logo'
-              width={150}
-              height={25}
+              width={300}
+              height={50}
             />
           </a>
         </Link>
