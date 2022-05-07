@@ -9,7 +9,7 @@ export default function CreationPage({ creations, page, total }) {
   return (
     <div className={styles.container}>
       <div className={styles.homeHeader}>
-        <h1>Čalounictví a nábytek</h1>
+        <h1>Výroba a oprava čalouněného nábytku</h1>
         <p>Zakázková výroba, oprava nábytku a automotive potahů.</p>
       </div>
 
