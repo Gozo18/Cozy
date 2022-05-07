@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
 
 @import "./variables.scss";
 
@@ -10,7 +10,7 @@ body {
   color: $main;
   background-color: $bg;
   font-size: 1.1rem;
-  /* font-weight: 600; */
+  font-weight: 200;
 
   @media (max-width: $md) {
     font-size: 0.9rem;
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
