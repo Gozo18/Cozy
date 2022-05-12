@@ -2,7 +2,8 @@ import SimpleSlider from "@/components/slick/slider";
 import List from "@/components/list";
 import styles from "@/styles/Home.module.scss";
 import { API_URL } from "@/config/index";
-import Heading from "../components/Heading";
+import Heading from "@/components/Heading";
+import ColorSlider from "@/components/ColorSlider";
 
 export default function Home({ creations, offers }) {
   return (
@@ -20,6 +21,8 @@ export default function Home({ creations, offers }) {
           <List key={creation.id} creation={creation} />
         ))}
       </div>
+
+      <ColorSlider />
     </div>
   );
 }
