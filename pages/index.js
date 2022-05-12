@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.scss";
 import { API_URL } from "@/config/index";
 import Heading from "@/components/Heading";
 import ColorSlider from "@/components/ColorSlider";
+import ColorSelect from "@/components/ColorSelect";
 
 export default function Home({ creations, offers }) {
   return (
@@ -23,6 +24,7 @@ export default function Home({ creations, offers }) {
       </div>
 
       <ColorSlider />
+      <ColorSelect />
     </div>
   );
 }
