@@ -19,6 +19,10 @@
 
 .subheader {
   margin: 0 0 30px;
+
+  @media (max-width: $md) {
+    margin: 70px 0 0;
+  }
 }
 
 .listBox {

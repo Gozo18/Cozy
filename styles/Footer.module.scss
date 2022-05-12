@@ -16,15 +16,52 @@
     @media (max-width: $md) {
       margin-bottom: 40px;
     }
+
+    svg {
+      fill: $main;
+    }
   }
-}
 
-.addLink {
-  margin-top: 20px;
-  font-size: 1rem;
-  text-decoration: underline;
+  .notLogged {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+  }
 
-  @media (max-width: $md) {
-    font-size: 0.8rem;
+  p {
+    margin: 0;
+    font-size: 1rem;
+
+    @media (max-width: $md) {
+      font-size: 0.8rem;
+    }
+  }
+
+  a {
+    margin: 0;
+    font-size: 1rem;
+    text-decoration: underline;
+
+    @media (max-width: $md) {
+      font-size: 0.8rem;
+    }
+  }
+
+  .addLink {
+    margin: 15px 0;
+    font-size: 1.1rem;
+
+    @media (max-width: $md) {
+      font-size: 0.9rem;
+    }
+
+    &:nth-child(2) {
+      margin: 30px 0 15px;
+    }
+
+    &:nth-child(4) {
+      margin: 15px 0 30px;
+    }
   }
 }

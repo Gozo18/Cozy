@@ -41,17 +41,19 @@ function MainFooter() {
             >
               Odhlásit
             </a>
+            <p>© 2022 cozy buddy</p>
           </>
         ) : (
-          <>
+          <div className={styles.notLogged}>
+            <p>© 2022 cozy buddy</p>
             {/* If logged out */}
             <Link href='/account/login'>
-              <a className={styles.addLink}>Přihlásit se</a>
+              <a>Přihlásit se</a>
             </Link>
-            <Link href='/account/register'>
+            {/* <Link href='/account/register'>
               <a className={styles.addLink}>Registrovat se</a>
-            </Link>
-          </>
+            </Link> */}
+          </div>
         )}
       </div>
     </footer>
