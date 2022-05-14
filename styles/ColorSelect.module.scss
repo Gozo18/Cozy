@@ -42,6 +42,11 @@
   cursor: pointer;
   border: 2px solid #cfcfcf;
 
+  @media (max-width: $md) {
+    width: 30px;
+    height: 30px;
+  }
+
   &:hover {
     outline: 3px solid #adadad;
   }
