@@ -5,12 +5,16 @@ import styles from "@/styles/ColorSelect.module.scss";
 function ColorSelect() {
   const images = {
     img1: {
-      name: "img1",
-      src: "/img1.jpg",
+      src: "/image1.webp",
     },
     img2: {
-      name: "img2",
-      src: "/img2.jpg",
+      src: "/image2.webp",
+    },
+    img3: {
+      src: "/image3.webp",
+    },
+    img4: {
+      src: "/image4.webp",
     },
   };
 
@@ -19,11 +23,15 @@ function ColorSelect() {
   const imgChange = (e) => {
     const imageData = e.target.getAttribute("data-image");
 
-    if (imageData === "img1") {
-      setImage(images.img1.src);
-    } else {
-      setImage(images.img2.src);
-    }
+    document.getElementById("yellowBox").style.outlineWidth = "0px";
+    document.getElementById("grayBox").style.outlineWidth = "0px";
+    document.getElementById("greenBox").style.outlineWidth = "0px";
+    document.getElementById("redBox").style.outlineWidth = "0px";
+    e.target.style.outlineWidth = "3px";
+    e.target.style.outlineStyle = "solid";
+    e.target.style.outlineColor = "#adadad";
+
+    setImage(images[imageData].src);
   };
 
   return (
@@ -35,13 +43,27 @@ function ColorSelect() {
       </div>
       <div className={styles.colorSelectors}>
         <div
+          id='yellowBox'
           className={styles.colorSelectorYellow}
           data-image='img1'
           onClick={imgChange}
         ></div>
         <div
+          id='grayBox'
           className={styles.colorSelectorGray}
           data-image='img2'
+          onClick={imgChange}
+        ></div>
+        <div
+          id='greenBox'
+          className={styles.colorSelectorGreen}
+          data-image='img3'
+          onClick={imgChange}
+        ></div>
+        <div
+          id='redBox'
+          className={styles.colorSelectorRed}
+          data-image='img4'
           onClick={imgChange}
         ></div>
       </div>

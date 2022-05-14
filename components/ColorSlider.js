@@ -4,7 +4,7 @@ import ReactCompareImage from "react-compare-image";
 function ColorSlider() {
   return (
     <div className={styles.colorBox}>
-      <ReactCompareImage leftImage='/img1.jpg' rightImage='/img2.jpg' />;
+      <ReactCompareImage leftImage='/img1.webp' rightImage='/img2.webp' />;
     </div>
   );
 }

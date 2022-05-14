@@ -5,10 +5,9 @@ import MainFooter from "./main-footer";
 function Layout(props) {
   return (
     <Fragment>
-      {/* <MainHeader />
+      <MainHeader />
       <main>{props.children}</main>
-      <MainFooter /> */}
-      <h1>Project closed</h1>
+      <MainFooter />
     </Fragment>
   );
 }
