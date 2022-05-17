@@ -13,7 +13,7 @@ export default function Ourjobs() {
         <div className={styles.contactImageBox}>
           <div className={styles.contactImage}>
             <Image
-              src='/mishaOfi.png'
+              src='/misha.png'
               alt='Cozy Buddy'
               layout='fill'
               objectFit='cover'
