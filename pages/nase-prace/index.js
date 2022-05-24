@@ -2,15 +2,14 @@ import List from "@/components/list";
 import styles from "@/styles/Home.module.scss";
 import { API_URL, PER_PAGE } from "@/config/index";
 import Pagination from "@/components/Pagination";
-import Heading from "../../components/Heading";
+import HeadingJobs from "../../components/HeadingJobs";
 
 export default function CreationPage({ creations, page, total }) {
   const cres = creations;
 
   return (
     <div className={styles.container}>
-      <Heading />
-
+      <HeadingJobs />
       {creations.length === 0 && <h3>Žádné zakázky</h3>}
 
       <div className={styles.listBox}>

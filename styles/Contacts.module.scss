@@ -2,6 +2,10 @@
 
 .container {
   margin: 1rem 5%;
+
+  @media (max-width: $md) {
+    margin: 1rem 0;
+  }
 }
 
 .homeHeader {

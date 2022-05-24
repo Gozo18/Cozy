@@ -12,16 +12,16 @@ export default function Home({ creations, offers }) {
       <Heading />
       <SimpleSlider offers={offers} />
 
-      {creations.length === 0 && (
+      {/* {creations.length === 0 && (
         <h2 className={styles.subheader}>Žádné zakázky</h2>
       )}
-      {creations.length > 0 && <h2 className={styles.subheader}>Naše práce</h2>}
+      {creations.length > 0 && <h2 className={styles.subheader}>Naše práce</h2>} */}
 
-      <div className={styles.listBox}>
+      {/* <div className={styles.listBox}>
         {creations.map((creation) => (
           <List key={creation.id} creation={creation} />
         ))}
-      </div>
+      </div> */}
 
       <ColorSlider />
       <ColorSelect />
