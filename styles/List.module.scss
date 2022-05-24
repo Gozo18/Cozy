@@ -30,6 +30,12 @@
       grid-column-end: 4;
     }
   }
+
+  @media (max-width: $md) {
+    border: 0;
+    border-bottom: 1px solid $border;
+    border-radius: 0;
+  }
 }
 
 .listImage {
@@ -39,11 +45,15 @@
   height: 200px;
 
   @media (max-width: $md) {
-    height: 130px;
+    height: 134vw;
   }
 
   img {
     border-radius: 8px 0 0 8px;
+
+    @media (max-width: $md) {
+      border-radius: 0;
+    }
   }
 }
 

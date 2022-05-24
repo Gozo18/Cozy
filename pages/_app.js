@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
           <link
             rel='preconnect'
             href='https://fonts.gstatic.com'
-            crossorigin
+            crossOrigin
           ></link>
           <link
             href='https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap'
