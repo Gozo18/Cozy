@@ -8,32 +8,40 @@ import styles from "@/styles/Header.module.scss";
 function MainHeader() {
   return (
     <header className={styles.container}>
-      <div>
-        <Link href="/">
+      <div className={styles.responseImage}>
+        <Image
+          src='/hero.jpg'
+          alt='Cozy Buddy banner'
+          layout='fill'
+          objectFit='contain'
+        />
+      </div>
+      <div className={styles.logo}>
+        <Link href='/'>
           <a>
             <Image
-              src="/CB.svg"
-              alt="Cozy Buddy Logo"
-              width={300}
-              height={50}
+              src='/CB.svg'
+              alt='Cozy Buddy Logo'
+              layout='fill'
+              objectFit='contain'
             />
           </a>
         </Link>
       </div>
       <nav className={styles.links}>
-        <Link href="/">
+        <Link href='/'>
           <a>
             <IoHomeOutline />
             <span>Domů</span>
           </a>
         </Link>
-        <Link href="/nase-prace">
+        <Link href='/nase-prace'>
           <a>
             <IoAlbumsOutline />
             <span>Naše práce</span>
           </a>
         </Link>
-        <Link href="/kontakty">
+        <Link href='/kontakty'>
           <a>
             <IoPersonOutline />
             <span>Kontakty</span>
