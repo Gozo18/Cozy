@@ -20,8 +20,10 @@
   border-radius: 8px;
 
   @media (max-width: 991px) {
-    margin: 0 1px;
-    height: 303px;
+    margin: 0;
+    height: 83vw;
+    border: 0;
+    border-radius: 0;
   }
 }
 
@@ -31,7 +33,7 @@
   height: 512px;
 
   @media (max-width: 991px) {
-    height: 300px;
+    height: 83vw;
   }
 
   img {
@@ -55,6 +57,12 @@
   backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 8px;
+
+  @media (max-width: 991px) {
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
 
   h3,
   p {
