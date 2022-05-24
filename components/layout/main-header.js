@@ -8,14 +8,6 @@ import styles from "@/styles/Header.module.scss";
 function MainHeader() {
   return (
     <header className={styles.container}>
-      <div className={styles.responseImage}>
-        <Image
-          src='/hero.jpg'
-          alt='Cozy Buddy banner'
-          layout='fill'
-          objectFit='contain'
-        />
-      </div>
       <div className={styles.logo}>
         <Link href='/'>
           <a>

@@ -8,6 +8,19 @@
   }
 }
 
+.responseImage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 93vw;
+
+  @media (max-width: $md) {
+    display: block;
+  }
+}
+
 .homeHeader,
 .subheader {
   text-align: center;
