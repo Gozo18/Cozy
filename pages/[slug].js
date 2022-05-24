@@ -11,31 +11,21 @@ export default function Detail({ creation }) {
 
   return (
     <div>
+      <span className={styles.detailImage}>
+        <Image
+          src={creation.image ? creation.image.url : "/CB-cap.jpg"}
+          alt='Cozy Buddy'
+          layout='fill'
+          objectFit='cover'
+        />
+      </span>
       <div className={styles.container}>
         <div className={styles.subNav}>
           <div onClick={() => router.back()} className={styles.backButton}>
             {"<"} Zpět
           </div>
-          {/* <div className={styles.controls}>
-            <Link href={`/nase-prace/edit/${cre.id}`}>
-              <a>
-                <IoPencilSharp /> Upravit
-              </a>
-            </Link>
-            <a href="#" className={styles.delete} onClick={deleteEvent}>
-              <IoCloseSharp /> Smazat
-            </a>
-          </div> */}
         </div>
       </div>
-      <span className={styles.detailImage}>
-        <Image
-          src={creation.image ? creation.image.url : "/CB-cap.jpg"}
-          alt="Cozy Buddy"
-          layout="fill"
-          objectFit="contain"
-        />
-      </span>
       <div className={styles.container}>
         <div className={styles.detailText}>
           <h3>{creation.name}</h3>
@@ -46,9 +36,9 @@ export default function Detail({ creation }) {
             <span className={styles.detailGalleryImage} key={img.id}>
               <Image
                 src={img.url}
-                alt="Cozy Buddy"
-                layout="fill"
-                objectFit="contain"
+                alt='Cozy Buddy'
+                layout='fill'
+                objectFit='cover'
               />
             </span>
           ))}

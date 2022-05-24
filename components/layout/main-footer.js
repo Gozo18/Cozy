@@ -11,7 +11,7 @@ function MainFooter() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <Link href='/'>
+        {/* <Link href='/'>
           <a>
             <Image
               src='/CB.svg'
@@ -20,7 +20,7 @@ function MainFooter() {
               height={50}
             />
           </a>
-        </Link>
+        </Link> */}
 
         {user ? (
           <>

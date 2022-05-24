@@ -12,48 +12,10 @@ import "react-toastify/dist/ReactToastify.min.css";
 export default function Detail({ creation }) {
   const router = useRouter();
 
-  /* const deleteEvent = async (e) => {
-    if (confirm("Jste si jistí?")) {
-      const res = await fetch(`${API_URL}/creations/${cre.id}`, {
-        method: "DELETE",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        toast.error(data.message, {
-          theme: "colored",
-        });
-      } else {
-        router.push("/nase-prace");
-      }
-    }
-  }; */
-
   return (
     <div>
-      <div className={styles.container}>
-        <div className={styles.subNav}>
-          <div onClick={() => router.back()} className={styles.backButton}>
-            {"<"} Zpět
-          </div>
-          {/* <div className={styles.controls}>
-            <Link href={`/nase-prace/edit/${creation.id}`}>
-              <a>
-                <IoPencilSharp /> Upravit
-              </a>
-            </Link>
-            <a href="#" className={styles.delete} onClick={deleteEvent}>
-              <IoCloseSharp /> Smazat
-            </a>
-          </div> */}
-        </div>
-      </div>
       <ToastContainer
-        position="bottom-center"
+        position='bottom-center'
         autoClose={3000}
         hideProgressBar
         newestOnTop={false}
@@ -66,11 +28,18 @@ export default function Detail({ creation }) {
       <span className={styles.detailImage}>
         <Image
           src={creation.image ? creation.image.url : "/CB-cap.jpg"}
-          alt="Cozy Buddy"
-          layout="fill"
-          objectFit="contain"
+          alt='Cozy Buddy'
+          layout='fill'
+          objectFit='cover'
         />
       </span>
+      <div className={styles.container}>
+        <div className={styles.subNav}>
+          <div onClick={() => router.back()} className={styles.backButton}>
+            {"<"} Zpět
+          </div>
+        </div>
+      </div>
       <div className={styles.container}>
         <div className={styles.detailText}>
           <h1>{creation.name}</h1>
@@ -81,9 +50,9 @@ export default function Detail({ creation }) {
             <span className={styles.detailGalleryImage} key={img.id}>
               <Image
                 src={img.url}
-                alt="Cozy Buddy"
-                layout="fill"
-                objectFit="contain"
+                alt='Cozy Buddy'
+                layout='fill'
+                objectFit='cover'
               />
             </span>
           ))}
