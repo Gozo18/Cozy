@@ -12,7 +12,7 @@ function MainHeader() {
         <Link href='/'>
           <a>
             <Image
-              src='/CB.svg'
+              src='/CBwhite.svg'
               alt='Cozy Buddy Logo'
               layout='fill'
               objectFit='contain'
