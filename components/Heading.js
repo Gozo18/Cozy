@@ -4,14 +4,14 @@ import styles from "@/styles/Home.module.scss";
 function Heading() {
   return (
     <>
-      <div className={styles.responseImage}>
+      {/* <div className={styles.responseImage}>
         <Image
           src='/hero.jpg'
           alt='Cozy Buddy banner'
           layout='fill'
           objectFit='contain'
         />
-      </div>
+      </div> */}
       <div className={styles.homeHeader}>
         <h1>Výroba a oprava čalouněného nábytku</h1>
         <p>

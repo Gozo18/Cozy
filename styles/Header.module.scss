@@ -29,9 +29,7 @@
   z-index: 5;
 
   @media (max-width: $md) {
-    position: absolute;
-    top: 5vw;
-    left: 5vw;
+    /* margin-top: 50px; */
     width: 48vw;
     height: 8vw;
   }
