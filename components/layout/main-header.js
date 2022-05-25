@@ -8,19 +8,20 @@ import styles from "@/styles/Header.module.scss";
 
 function MainHeader() {
   const router = useRouter();
-  console.log(router);
 
   return (
     <header
       className={
-        router.pathname === "/nase-prace/[slug]"
+        (router.pathname === "/nase-prace/[slug]") |
+        (router.pathname === "/[slug]")
           ? styles.containerJobs
           : styles.container
       }
     >
       <div
         className={
-          router.pathname === "/nase-prace/[slug]"
+          (router.pathname === "/nase-prace/[slug]") |
+          (router.pathname === "/[slug]")
             ? styles.logoJobs
             : styles.logo
         }
