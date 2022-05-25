@@ -1,14 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoAlbumsOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
 import styles from "@/styles/Header.module.scss";
 
 function MainHeader() {
+  const router = useRouter();
+  console.log(router);
+
   return (
-    <header className={styles.container}>
-      <div className={styles.logo}>
+    <header
+      className={
+        router.pathname === "/nase-prace/[slug]"
+          ? styles.containerJobs
+          : styles.container
+      }
+    >
+      <div
+        className={
+          router.pathname === "/nase-prace/[slug]"
+            ? styles.logoJobs
+            : styles.logo
+        }
+      >
         <Link href='/'>
           <a>
             <Image

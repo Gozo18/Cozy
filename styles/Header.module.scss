@@ -8,17 +8,27 @@
   margin-bottom: 30px;
   padding: 15px 30px;
   background-color: $white;
-  /* border: 1px solid $border;
-  border-radius: 8px; */
 
   @media (max-width: $md) {
     justify-content: center;
     margin: 0;
     padding: 0;
+  }
+}
 
-    /* img {
-      width: 60% !important;
-    } */
+.containerJobs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 5%;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  background-color: $white;
+
+  @media (max-width: $md) {
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -29,7 +39,20 @@
   z-index: 5;
 
   @media (max-width: $md) {
-    /* margin-top: 50px; */
+    margin-top: 50px;
+    width: 48vw;
+    height: 8vw;
+  }
+}
+
+.logoJobs {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  z-index: 5;
+
+  @media (max-width: $md) {
+    margin: 20px 0 0 20px;
     width: 48vw;
     height: 8vw;
   }
