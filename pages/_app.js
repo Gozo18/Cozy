@@ -3,6 +3,7 @@ import Layout from "@/components/layout/layout";
 import { AuthProvider } from "@/context/AuthContext";
 
 import "@/styles/globals.scss";
+import "lightgallery/scss/lightgallery.scss";
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { IoPencilSharp, IoCloseSharp } from "react-icons/io5";
-import Link from "next/link";
 
 import styles from "@/styles/Detail.module.scss";
 
@@ -8,6 +6,7 @@ import { API_URL } from "@/config/index";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
+import DetailGallery from "@/components/DetailGallery";
 
 export default function Detail({ creation }) {
   const router = useRouter();
@@ -45,7 +44,7 @@ export default function Detail({ creation }) {
           <h1>{creation.name}</h1>
           <p>{creation.description}</p>
         </div>
-        <div className={styles.detailGallery}>
+        {/* <div className={styles.detailGallery}>
           {creation.gallery.map((img) => (
             <span className={styles.detailGalleryImage} key={img.id}>
               <Image
@@ -56,7 +55,8 @@ export default function Detail({ creation }) {
               />
             </span>
           ))}
-        </div>
+        </div> */}
+        <DetailGallery pics={creation.gallery} />
       </div>
     </div>
   );
