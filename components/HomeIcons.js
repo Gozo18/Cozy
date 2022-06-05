@@ -48,7 +48,7 @@ function HomeIcons() {
               objectFit='contain'
             />
           </div>
-          <h3>Židle</h3>
+          <h3>Taburety</h3>
         </div>
       </div>
     </div>
