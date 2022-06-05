@@ -60,3 +60,25 @@
     gap: 20px;
   }
 }
+
+.homeIconsBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+
+  .homeIconBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .homeIcon {
+    position: relative;
+    width: 60%;
+    height: 23vw;
+  }
+}

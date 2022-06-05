@@ -3,6 +3,7 @@ import List from "@/components/list";
 import styles from "@/styles/Home.module.scss";
 import { API_URL } from "@/config/index";
 import Heading from "@/components/Heading";
+import HomeIcons from "@/components/HomeIcons";
 import ColorSlider from "@/components/ColorSlider";
 import ColorSelect from "@/components/ColorSelect";
 
@@ -22,6 +23,8 @@ export default function Home({ creations, offers }) {
           <List key={creation.id} creation={creation} />
         ))}
       </div> */}
+
+      <HomeIcons />
 
       <ColorSlider />
       <ColorSelect />
