@@ -20,7 +20,7 @@ function HomeIcons() {
         <div className={styles.homeIconBox}>
           <div className={styles.homeIcon}>
             <Image
-              src='/iconArmChair.svg'
+              src='/iconArmchair.svg'
               alt='křesla'
               layout='fill'
               objectFit='contain'

@@ -68,6 +68,10 @@
   padding: 20px;
   width: 100%;
 
+  @media (min-width: 992px) {
+    flex-wrap: nowrap;
+  }
+
   .homeIconBox {
     display: flex;
     justify-content: center;
@@ -80,5 +84,10 @@
     position: relative;
     width: 60%;
     height: 23vw;
+
+    @media (min-width: 992px) {
+      width: 40%;
+      height: 10vw;
+    }
   }
 }
