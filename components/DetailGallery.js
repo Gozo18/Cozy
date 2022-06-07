@@ -2,10 +2,9 @@ import LightGallery from "lightgallery/react";
 
 import styles from "@/styles/Detail.module.scss";
 
-function DetailGallery({ pics }) {
-  console.log(pics);
+function DetailGallery({ pics, name }) {
   const onInit = () => {
-    console.log("lightGallery has been initialized");
+    /* console.log("lightGallery has been initialized"); */
   };
   return (
     <div className={styles.galleryBox}>
@@ -16,7 +15,7 @@ function DetailGallery({ pics }) {
             className={styles.galleryImage}
             key={i}
           >
-            <img alt='Cozy Buddy' src={img.url} />
+            <img alt={name} src={img.url} />
           </a>
         ))}
       </LightGallery>

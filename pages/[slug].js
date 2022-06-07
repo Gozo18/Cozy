@@ -48,7 +48,7 @@ export default function Detail({ creation }) {
             </span>
           ))}
         </div> */}
-        <DetailGallery pics={creation.gallery} />
+        <DetailGallery pics={creation.gallery} name={creation.name} />
       </div>
     </div>
   );

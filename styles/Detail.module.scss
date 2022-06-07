@@ -65,6 +65,14 @@
   .description {
     margin: 10px 0 40px;
 
+    div {
+      text-align: center;
+
+      @media (min-width: 992px) {
+        text-align: left;
+      }
+    }
+
     li {
       margin-bottom: 15px;
     }
