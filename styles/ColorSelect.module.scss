@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0 25%;
   }
+
+  @media (max-width: 499px) {
+    padding: 0 10%;
+  }
 }
 
 .colorItem {
@@ -25,6 +29,10 @@
 
   @media (max-width: $md) {
     height: 60vw;
+  }
+
+  @media (max-width: 499px) {
+    height: 100vw;
   }
 }
 
@@ -46,6 +54,10 @@
 
     @media (max-width: $md) {
       height: 8vw;
+    }
+
+    @media (max-width: 499px) {
+      height: 11vw;
     }
 
     &:first-child {
