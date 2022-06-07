@@ -3,6 +3,7 @@ import { IoPencilSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import { API_URL } from "@/config/index";
 import { useRouter } from "next/router";
+import DetailGallery from "@/components/DetailGallery";
 
 import styles from "@/styles/Detail.module.scss";
 
@@ -31,7 +32,7 @@ export default function Detail({ creation }) {
           <h3>{creation.name}</h3>
           <p>{creation.perex}</p>
         </div>
-        <div className={styles.detailGallery}>
+        {/* <div className={styles.detailGallery}>
           {creation.gallery.map((img) => (
             <span className={styles.detailGalleryImage} key={img.id}>
               <Image
@@ -42,7 +43,8 @@ export default function Detail({ creation }) {
               />
             </span>
           ))}
-        </div>
+        </div> */}
+        <DetailGallery pics={creation.gallery} />
       </div>
     </div>
   );
