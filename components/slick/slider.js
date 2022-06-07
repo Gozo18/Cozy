@@ -36,7 +36,9 @@ function SimpleSlider({ offers }) {
               <div className={styles.sliderItem}>
                 <span className={styles.sliderImage}>
                   <Image
-                    src={off.image ? off.image.url : "/CB-cap.jpg"}
+                    src={
+                      off.image ? off.image.formats.medium.url : "/CB-cap.jpg"
+                    }
                     alt='Cozy Buddy Logo'
                     layout='fill'
                     objectFit='contain'

@@ -10,7 +10,9 @@ function List({ creation }) {
       <a className={styles.listItem}>
         <span className={styles.listImage}>
           <Image
-            src={creation.image ? creation.image.url : "/CB-cap.jpg"}
+            src={
+              creation.image ? creation.image.formats.medium.url : "/CB-cap.jpg"
+            }
             alt='Cozy Buddy'
             layout='fill'
             objectFit='contain'

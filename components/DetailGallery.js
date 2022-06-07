@@ -11,7 +11,11 @@ function DetailGallery({ pics }) {
     <div className={styles.galleryBox}>
       <LightGallery onInit={onInit} speed={500}>
         {pics.map((img, i) => (
-          <a href={img.url} className={styles.galleryImage} key={i}>
+          <a
+            href={img.formats.medium.url}
+            className={styles.galleryImage}
+            key={i}
+          >
             <img alt='Cozy Buddy' src={img.url} />
           </a>
         ))}
