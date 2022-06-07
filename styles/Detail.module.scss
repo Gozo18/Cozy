@@ -45,7 +45,6 @@
 .detailImage {
   position: relative;
   display: block;
-  margin-top: -56px;
   margin-bottom: 30px;
   width: 100%;
   height: 120vw;
@@ -105,6 +104,39 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+.detailBox {
+  margin-top: -47px;
+
+  @media (min-width: 992px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+
+    div:nth-child(2) {
+      width: 100%;
+      order: 1;
+    }
+
+    div:nth-child(3) {
+      margin: 0;
+      padding-left: 40px;
+      width: 50%;
+      order: 3;
+
+      h3 {
+        margin-bottom: 40px;
+        text-align: left;
+      }
+    }
+
+    .detailImage {
+      width: 50%;
+      height: 40vw;
+      order: 2;
     }
   }
 }

@@ -15,7 +15,7 @@ function List({ creation }) {
             }
             alt='Cozy Buddy'
             layout='fill'
-            objectFit='contain'
+            objectFit='cover'
           />
         </span>
         <div className={styles.listText}>

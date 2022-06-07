@@ -1,40 +1,12 @@
 @import "./variables.scss";
 
-.listBox {
-  width: 100%;
-
-  @media (min-width: 992px) {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-}
-
 .listItem {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  background-color: $white;
-  border: 1px solid $border;
-  border-radius: 8px;
-
-  @media (min-width: 992px) {
-    margin-bottom: 0;
-
-    &:first-child {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-
-    &:nth-child(4) {
-      grid-column-start: 2;
-      grid-column-end: 4;
-    }
-  }
 
   @media (max-width: $md) {
-    border: 0;
     border-bottom: 1px solid $border;
-    border-radius: 0;
   }
 }
 
@@ -42,28 +14,20 @@
   position: relative;
   margin-top: 20px;
   width: 100%;
-  height: 200px;
+  height: 25vw;
 
   @media (max-width: $md) {
     height: 134vw;
   }
 
   img {
-    border-radius: 8px 0 0 8px;
-
-    @media (max-width: $md) {
-      border-radius: 0;
-    }
+    border-radius: 0;
   }
 }
 
 .listText {
   padding: 5%;
   width: 100%;
-
-  @media (min-width: 992px) {
-    padding: 20px 80px;
-  }
 
   h3,
   p {
@@ -95,5 +59,35 @@
   svg {
     position: relative;
     top: 2px;
+  }
+}
+
+.listBox {
+  width: 100%;
+
+  @media (min-width: 992px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    .listItem {
+      margin-bottom: 0;
+      width: 25%;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .listImage {
+      margin-top: 0;
+    }
+
+    .listText {
+      border: 1px solid $border;
+
+      h3 {
+        font-size: 1.3vw;
+      }
+    }
   }
 }

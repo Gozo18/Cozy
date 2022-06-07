@@ -50,6 +50,17 @@ function HomeIcons() {
           </div>
           <h3>Taburety</h3>
         </div>
+        <div className={styles.homeIconBox}>
+          <div className={styles.homeIcon}>
+            <Image
+              src='/iconBed.svg'
+              alt='postele'
+              layout='fill'
+              objectFit='contain'
+            />
+          </div>
+          <h3>Postele</h3>
+        </div>
       </div>
     </div>
   );

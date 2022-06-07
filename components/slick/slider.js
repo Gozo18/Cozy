@@ -41,7 +41,7 @@ function SimpleSlider({ offers }) {
                     }
                     alt='Cozy Buddy Logo'
                     layout='fill'
-                    objectFit='contain'
+                    objectFit='cover'
                     priority
                   />
                 </span>

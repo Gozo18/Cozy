@@ -12,8 +12,8 @@ export default function Detail({ creation }) {
   const router = useRouter();
 
   return (
-    <div>
-      <ToastContainer
+    <div className={styles.detailBox}>
+      {/* <ToastContainer
         position='bottom-center'
         autoClose={3000}
         hideProgressBar
@@ -23,7 +23,7 @@ export default function Detail({ creation }) {
         pauseOnFocusLoss={false}
         draggable={false}
         pauseOnHover={false}
-      />
+      /> */}
       <span className={styles.detailImage}>
         <Image
           src={

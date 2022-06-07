@@ -1,5 +1,5 @@
 import List from "@/components/list";
-import styles from "@/styles/Home.module.scss";
+import styles from "@/styles/List.module.scss";
 import { API_URL, PER_PAGE } from "@/config/index";
 import Pagination from "@/components/Pagination";
 import HeadingJobs from "../../components/HeadingJobs";

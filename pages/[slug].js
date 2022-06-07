@@ -11,7 +11,7 @@ export default function Detail({ creation }) {
   const router = useRouter();
 
   return (
-    <div>
+    <div className={styles.detailBox}>
       <span className={styles.detailImage}>
         <Image
           src={creation.image ? creation.image.url : "/CB-cap.jpg"}
