@@ -11,6 +11,9 @@ export default function Home({ creations, offers }) {
   return (
     <div className={styles.container}>
       <Heading />
+      <HomeIcons />
+
+      <h2 className={styles.subheader}>Na prodej:</h2>
       <SimpleSlider offers={offers} />
 
       {/* {creations.length === 0 && (
@@ -24,9 +27,8 @@ export default function Home({ creations, offers }) {
         ))}
       </div> */}
 
-      <HomeIcons />
-
-      <ColorSlider />
+      {/* <ColorSlider /> */}
+      <h2 className={styles.subheader}>Velký výběr látek:</h2>
       <ColorSelect />
     </div>
   );

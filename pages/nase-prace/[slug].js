@@ -42,7 +42,10 @@ export default function Detail({ creation }) {
       <div className={styles.container}>
         <div className={styles.detailText}>
           <h1>{creation.name}</h1>
-          <p>{creation.description}</p>
+          <div
+            className={styles.description}
+            dangerouslySetInnerHTML={{ __html: creation.description }}
+          ></div>
         </div>
         {/* <div className={styles.detailGallery}>
           {creation.gallery.map((img) => (
