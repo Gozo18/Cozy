@@ -13,13 +13,15 @@ export default function Home({ creations, offers }) {
       <Heading />
       <HomeIcons />
 
-      <h2 className={styles.subheader}>Na prodej:</h2>
-      <SimpleSlider offers={offers} />
-
-      {/* {creations.length === 0 && (
+      {offers.length === 0 && (
         <h2 className={styles.subheader}>Žádné zakázky</h2>
       )}
-      {creations.length > 0 && <h2 className={styles.subheader}>Naše práce</h2>} */}
+      {offers.length > 0 && (
+        <div>
+          <h2 className={styles.subheader}>Na prodej:</h2>
+          <SimpleSlider offers={offers} />
+        </div>
+      )}
 
       {/* <div className={styles.listBox}>
         {creations.map((creation) => (
