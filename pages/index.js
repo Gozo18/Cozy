@@ -14,7 +14,7 @@ export default function Home({ creations, offers }) {
       <HomeIcons />
 
       {offers.length === 0 && (
-        <h2 className={styles.subheader}>Žádné zakázky</h2>
+        <h2 className={styles.subheader}>Nic na prodej</h2>
       )}
       {offers.length > 0 && (
         <div>

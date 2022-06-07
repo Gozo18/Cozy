@@ -47,7 +47,11 @@ function SimpleSlider({ offers }) {
                 </span>
                 <div className={styles.sliderGlass}>
                   <h3>{off.name}</h3>
-                  <p>{off.perex}</p>
+                  {/* <p>{off.perex}</p> */}
+                  <div
+                    className={styles.description}
+                    dangerouslySetInnerHTML={{ __html: off.perex }}
+                  ></div>
                 </div>
               </div>
             </a>
