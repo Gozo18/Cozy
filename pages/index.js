@@ -30,7 +30,7 @@ export default function Home({ creations, offers }) {
       </div> */}
 
       {/* <ColorSlider /> */}
-      <h2 className={styles.subheader}>Velký výběr látek:</h2>
+      <h2 className={styles.subheader}>Výběr látek:</h2>
       <ColorSelect />
     </div>
   );

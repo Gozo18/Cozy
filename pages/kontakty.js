@@ -44,6 +44,8 @@ export default function Ourjobs() {
           <div>
             <a href='mailto:info@cozybuddy.cz'>info@cozybuddy.cz</a>
           </div>
+          <div>IČO: 09005374</div>
+          <div>Nejsem plátce DPH</div>
         </div>
       </div>
     </div>
