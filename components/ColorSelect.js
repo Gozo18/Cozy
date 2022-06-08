@@ -58,6 +58,7 @@ function ColorSelect() {
             layout='fill'
             objectFit='cover'
           />
+          <p>mineral</p>
         </div>
         <div className='colorBox' data-image='img2' onClick={imgChange}>
           <Image
@@ -66,6 +67,7 @@ function ColorSelect() {
             layout='fill'
             objectFit='cover'
           />
+          <p>spruce</p>
         </div>
         <div className='colorBox' data-image='img3' onClick={imgChange}>
           <Image
@@ -74,6 +76,7 @@ function ColorSelect() {
             layout='fill'
             objectFit='cover'
           />
+          <p>charcoal</p>
         </div>
         <div className='colorBox' data-image='img4' onClick={imgChange}>
           <Image
@@ -82,6 +85,7 @@ function ColorSelect() {
             layout='fill'
             objectFit='cover'
           />
+          <p>pigeon</p>
         </div>
         <div className='colorBox' data-image='img5' onClick={imgChange}>
           <Image
@@ -90,6 +94,7 @@ function ColorSelect() {
             layout='fill'
             objectFit='cover'
           />
+          <p>blush</p>
         </div>
         <div className='colorBox' data-image='img6' onClick={imgChange}>
           <Image
@@ -98,6 +103,7 @@ function ColorSelect() {
             layout='fill'
             objectFit='cover'
           />
+          <p>flax</p>
         </div>
       </div>
     </div>

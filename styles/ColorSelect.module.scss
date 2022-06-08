@@ -11,7 +11,7 @@
   }
 
   @media (max-width: 499px) {
-    padding: 0 10%;
+    padding: 0 5%;
   }
 }
 
@@ -32,7 +32,7 @@
   }
 
   @media (max-width: 499px) {
-    height: 100vw;
+    height: 110vw;
   }
 }
 
@@ -57,11 +57,31 @@
     }
 
     @media (max-width: 499px) {
-      height: 11vw;
+      height: 13vw;
     }
 
     &:first-child {
       outline-width: 3px;
+    }
+
+    p {
+      position: absolute;
+      bottom: -2vw;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 1.3vw;
+
+      @media (max-width: $md) {
+        bottom: -3vw;
+        font-size: 1.8vw;
+      }
+
+      @media (max-width: 499px) {
+        bottom: -5vw;
+        font-size: 3vw;
+      }
     }
   }
 }
