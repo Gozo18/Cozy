@@ -30,7 +30,7 @@ export async function getServerSideProps({ query: { page = 1 } }) {
   const total = await totalRes.json();
 
   const res = await fetch(
-    `${API_URL}/creations?_sort=date:DESC&_limit=${PER_PAGE}&_start=${start}`
+    `${API_URL}/creations?_sort=id:DESC&_limit=${PER_PAGE}&_start=${start}`
   );
   const creations = await res.json();
 

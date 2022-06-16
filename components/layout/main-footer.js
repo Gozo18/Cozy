@@ -47,9 +47,9 @@ function MainFooter() {
           <div className={styles.notLogged}>
             <p>© 2022 cozy buddy</p>
             {/* If logged out */}
-            <Link href='/account/login'>
+            {/* <Link href='/account/login'>
               <a>Přihlásit se</a>
-            </Link>
+            </Link> */}
             {/* <Link href='/account/register'>
               <a className={styles.addLink}>Registrovat se</a>
             </Link> */}

@@ -1,15 +1,16 @@
 @import "./variables.scss";
 
 .paginationBox {
-  margin-bottom: 70px;
-  float: right;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  width: 100%;
 }
 
 .paginationLink {
-  padding: 5px 15px;
-  height: 40px;
-  border: 1px solid $border;
-  border-radius: 8px;
-  background-color: $main !important;
+  padding: 7px 30px;
+  border: 1px solid $main;
+  background-color: $main;
   color: $white;
+  font-weight: 400;
 }
