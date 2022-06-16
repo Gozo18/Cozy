@@ -58,16 +58,33 @@ element.style {
 .slick-next {
   right: -25px;
 }
-.slick-prev,
-.slick-next {
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
   border: 1px solid $border !important;
   border-radius: 20px;
   color: #000 !important;
+
+  @media (max-width: 991px) {
+    top: 94%;
+    z-index: 5;
+  }
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: $main !important;
+.slick-slider .slick-prev {
+  @media (max-width: 991px) {
+    left: 15px;
+  }
+}
+
+.slick-slider .slick-next {
+  @media (max-width: 991px) {
+    right: 15px;
+  }
+}
+
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+  color: $main;
 }
 
 .lg-react-element {

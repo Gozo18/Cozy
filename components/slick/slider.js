@@ -21,7 +21,6 @@ function SimpleSlider({ offers }) {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-          arrows: false,
         },
       },
     ],
