@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 import Layout from "@/components/layout/layout";
 import { AuthProvider } from "@/context/AuthContext";
 
@@ -28,20 +27,6 @@ function MyApp({ Component, pageProps }) {
             href='https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap'
             rel='stylesheet'
           ></link>
-
-          <Script
-            src='https://www.googletagmanager.com/gtag/js?id=G-LMC7WYBLZS'
-            strategy='afterInteractive'
-          />
-          <Script id='google-analytics' strategy='afterInteractive'>
-            {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-LMC7WYBLZS');
-        `}
-          </Script>
         </Head>
         <Component {...pageProps} />
       </Layout>

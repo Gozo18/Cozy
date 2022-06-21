@@ -8,12 +8,28 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="cs">
-        <Head />
+      <Html lang='cs'>
+        <Head>
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=G-LMC7WYBLZS'
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LMC7WYBLZS', { page_path: window.location.pathname });
+            `,
+            }}
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
-          <div id="modal-root"></div>
+          <div id='modal-root'></div>
         </body>
       </Html>
     );
