@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
             content='Cozy Buddy - čalounictví a nábytek. Zakázková výroba, oprava nábytku a automotive potahů.'
           />
           <meta httpEquiv='content-language' content='cs' />
+          <meta name='robots' content='index,follow' />
           <link rel='icon' href='/favicon.ico' />
           <link rel='preconnect' href='https://fonts.googleapis.com'></link>
           <link
