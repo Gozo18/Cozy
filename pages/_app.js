@@ -27,6 +27,14 @@ function MyApp({ Component, pageProps }) {
             href='https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap'
             rel='stylesheet'
           ></link>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMC7WYBLZS"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-LMC7WYBLZS');
+          </script>
         </Head>
         <Component {...pageProps} />
       </Layout>
