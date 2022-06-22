@@ -14,7 +14,12 @@ function MyApp({ Component, pageProps }) {
           name='description'
           content='Cozy Buddy - čalounictví a nábytek. Zakázková výroba, oprava nábytku a automotive potahů.'
         />
-        <meta property='og:image' content='/hero.jpg'></meta>
+        <meta
+          property='og:title'
+          content='Cozy Buddy - Výroba a oprava čalouněného nábytku'
+        />
+        <meta property='og:image' content='https://cozybuddy.cz/hero.jpg' />
+        <meta property='og:url' content='https://cozybuddy.cz' />
         <meta httpEquiv='content-language' content='cs' />
         <meta name='robots' content='index,follow' />
         <link rel='icon' href='/favicon.ico' />
