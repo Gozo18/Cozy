@@ -1,3 +1,6 @@
+Sitemap: https://cozybuddy.cz/api/posts-sitemap
+
 User-Agent: *
 Allow: /
 
+Disallow: /api/*
