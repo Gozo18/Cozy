@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang='cs'>
         <Head>
-          {/* <script
+          <script
             async
             src='https://www.googletagmanager.com/gtag/js?id=G-LMC7WYBLZS'
           />
@@ -24,7 +24,7 @@ class MyDocument extends Document {
               gtag('config', 'G-LMC7WYBLZS', { page_path: window.location.pathname });
             `,
             }}
-          /> */}
+          />
         </Head>
         <body>
           <Main />
