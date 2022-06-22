@@ -8,11 +8,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>Cozy Buddy</title>
+        <title>Cozy Buddy - Výroba a oprava čalouněného nábytku</title>
+        <meta name='title' content='Výroba a oprava čalouněného nábytku' />
         <meta
           name='description'
           content='Cozy Buddy - čalounictví a nábytek. Zakázková výroba, oprava nábytku a automotive potahů.'
         />
+        <meta property='og:image' content='/hero.jpg'></meta>
         <meta httpEquiv='content-language' content='cs' />
         <meta name='robots' content='index,follow' />
         <link rel='icon' href='/favicon.ico' />
