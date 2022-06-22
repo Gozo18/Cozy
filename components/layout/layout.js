@@ -6,7 +6,17 @@ function Layout(props) {
   return (
     <Fragment>
       <MainHeader />
-      <main>{props.children}</main>
+      <main>
+        <noscript>
+          <iframe
+            src='https://www.googletagmanager.com/ns.html?id=GTM-N9WB66F'
+            height='0'
+            width='0'
+            style='display:none;visibility:hidden'
+          ></iframe>
+        </noscript>
+        {props.children}
+      </main>
       <MainFooter />
     </Fragment>
   );
