@@ -5,18 +5,16 @@ import MainFooter from "./main-footer";
 function Layout(props) {
   return (
     <Fragment>
+      <noscript>
+        <iframe
+          src='https://www.googletagmanager.com/ns.html?id=GTM-N9WB66F'
+          height='0'
+          width='0'
+          style='display:none;visibility:hidden'
+        ></iframe>
+      </noscript>
       <MainHeader />
-      <main>
-        <noscript>
-          <iframe
-            src='https://www.googletagmanager.com/ns.html?id=GTM-N9WB66F'
-            height='0'
-            width='0'
-            style='display:none;visibility:hidden'
-          ></iframe>
-        </noscript>
-        {props.children}
-      </main>
+      <main>{props.children}</main>
       <MainFooter />
     </Fragment>
   );
