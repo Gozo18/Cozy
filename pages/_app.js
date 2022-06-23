@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         <meta name='title' content='Výroba a oprava čalouněného nábytku' />
         <meta
           name='description'
-          content='Cozy Buddy - čalounictví a nábytek. Zakázková výroba, oprava nábytku a automotive potahů.'
+          content='Cozy Buddy - Výroba a oprava čalouněného nábytku. Zakázková výroba, renovace starého čalounění a autočalounické práce.'
         />
         <meta
           property='og:title'
