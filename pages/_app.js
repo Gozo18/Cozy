@@ -15,11 +15,37 @@ function MyApp({ Component, pageProps }) {
           content='Cozy Buddy - Výroba a oprava čalouněného nábytku. Zakázková výroba, renovace starého čalounění a autočalounické práce.'
         />
         <meta
+          name='keywords'
+          content='čalounictví, čalouněný nábytek, čalounění, nábytek, čalounictví Brno, čalounictví Mikulov'
+        ></meta>
+
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://cozybuddy.cz/' />
+        <meta
           property='og:title'
           content='Cozy Buddy - Výroba a oprava čalouněného nábytku'
         />
+        <meta
+          property='og:description'
+          content='Cozy Buddy - Výroba a oprava čalouněného nábytku. Zakázková výroba, renovace starého čalounění a autočalounické práce.'
+        />
         <meta property='og:image' content='https://cozybuddy.cz/hero.jpg' />
-        <meta property='og:url' content='https://cozybuddy.cz' />
+
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://cozybuddy.cz/' />
+        <meta
+          property='twitter:title'
+          content='Cozy Buddy - Výroba a oprava čalouněného nábytku'
+        />
+        <meta
+          property='twitter:description'
+          content='Cozy Buddy - Výroba a oprava čalouněného nábytku. Zakázková výroba, renovace starého čalounění a autočalounické práce.'
+        />
+        <meta
+          property='twitter:image'
+          content='https://cozybuddy.cz/hero.jpg'
+        />
+
         <meta httpEquiv='content-language' content='cs' />
         <meta name='robots' content='index,follow' />
         <link rel='icon' href='/favicon.ico' />
