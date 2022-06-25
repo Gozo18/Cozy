@@ -14,10 +14,6 @@ function MyApp({ Component, pageProps }) {
           name='description'
           content='Cozy Buddy - Výroba a oprava čalouněného nábytku. Zakázková výroba, renovace starého čalounění a autočalounické práce.'
         />
-        <meta
-          name='keywords'
-          content='čalounictví, čalouněný nábytek, čalounění, nábytek, čalounictví Brno, čalounictví Mikulov'
-        ></meta>
 
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://cozybuddy.cz/' />
