@@ -15,7 +15,7 @@ function DetailGallery({ pics, name }) {
             className={styles.galleryImage}
             key={i}
           >
-            <img alt={name} src={img.url} />
+            <img alt={name} src={img.formats.medium.url} />
           </a>
         ))}
       </LightGallery>
