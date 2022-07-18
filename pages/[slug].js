@@ -14,7 +14,9 @@ export default function Detail({ creation }) {
     <div className={styles.detailBox}>
       <span className={styles.detailImage}>
         <Image
-          src={creation.image ? creation.image.url : "/CB-cap.jpg"}
+          src={
+            creation.image ? creation.image.formats.large.url : "/CB-cap.jpg"
+          }
           alt='Cozy Buddy'
           layout='fill'
           objectFit='cover'
