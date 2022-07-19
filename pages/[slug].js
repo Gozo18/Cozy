@@ -43,7 +43,7 @@ export default function Detail({ creation }) {
   );
 }
 
-export async function getStaticPaths() {
+/* export async function getStaticPaths() {
   const res = await fetch(`${API_URL}/offers`);
   const offers = await res.json();
 
@@ -67,9 +67,9 @@ export async function getStaticProps({ params: { slug } }) {
     },
     revalidate: 1,
   };
-}
+} */
 
-/* export async function getServerSideProps({ query: { slug } }) {
+export async function getServerSideProps({ query: { slug } }) {
   const res = await fetch(`${API_URL}/offers?slug=${slug}`);
   const offers = await res.json();
 
@@ -78,4 +78,4 @@ export async function getStaticProps({ params: { slug } }) {
       creation: offers[0],
     },
   };
-} */
+}
