@@ -32,31 +32,18 @@ export default function Detail({ creation }) {
       <div className={styles.container}>
         <div className={styles.detailText}>
           <h3>{creation.name}</h3>
-          {/* <p>{creation.perex}</p> */}
           <div
             className={styles.description}
             dangerouslySetInnerHTML={{ __html: creation.perex }}
           ></div>
         </div>
-        {/* <div className={styles.detailGallery}>
-          {creation.gallery.map((img) => (
-            <span className={styles.detailGalleryImage} key={img.id}>
-              <Image
-                src={img.url}
-                alt='Cozy Buddy'
-                layout='fill'
-                objectFit='cover'
-              />
-            </span>
-          ))}
-        </div> */}
         <DetailGallery pics={creation.gallery} name={creation.name} />
       </div>
     </div>
   );
 }
 
-/* export async function getStaticPaths() {
+export async function getStaticPaths() {
   const res = await fetch(`${API_URL}/offers`);
   const offers = await res.json();
 
@@ -80,9 +67,9 @@ export async function getStaticProps({ params: { slug } }) {
     },
     revalidate: 1,
   };
-} */
+}
 
-export async function getServerSideProps({ query: { slug } }) {
+/* export async function getServerSideProps({ query: { slug } }) {
   const res = await fetch(`${API_URL}/offers?slug=${slug}`);
   const offers = await res.json();
 
@@ -91,4 +78,4 @@ export async function getServerSideProps({ query: { slug } }) {
       creation: offers[0],
     },
   };
-}
+} */
