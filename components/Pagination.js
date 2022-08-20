@@ -9,12 +9,12 @@ export default function Pagination({ page, total }) {
     <div className={styles.paginationBox}>
       {page > 1 && (
         <Link href={`/nase-prace?page=${page - 1}`}>
-          <a className={styles.paginationLink}>Předchozí</a>
+          <a className={styles.paginationLink}>předchozí</a>
         </Link>
       )}
       {page < lastPage && (
         <Link href={`/nase-prace?page=${page + 1}`}>
-          <a className={styles.paginationLink}>Další</a>
+          <a className={styles.paginationLink}>další</a>
         </Link>
       )}
     </div>
