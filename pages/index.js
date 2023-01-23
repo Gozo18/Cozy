@@ -36,6 +36,8 @@ export default function Home() {
   );
 }
 
+
+
 /* export async function getStaticProps() {
   const res1 = await fetch(`${API_URL}/creations?_sort=date:DESC&_limit=4`);
   const creations = await res1.json();

@@ -34,12 +34,14 @@ function MainHeader() {
             <span>Domů</span>
           </a>
         </Link>
+        
         {/* <Link href='/nase-prace'>
           <a>
             <IoAlbumsOutline />
             <span>Naše práce</span>
           </a>
         </Link> */}
+
         <Link href='/kontakty'>
           <a>
             <IoPersonOutline />
