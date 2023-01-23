@@ -1,0 +1,94 @@
+@import "./variables.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: $main;
+  background-color: $bg;
+  font-size: 1.1rem;
+  font-weight: 200;
+
+  @media (max-width: $md) {
+    font-size: 1rem;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h1 {
+  @media (max-width: $md) {
+    font-size: 1.2rem;
+  }
+}
+
+h2 {
+  @media (max-width: $md) {
+    font-size: 1.1rem;
+  }
+}
+
+h3 {
+  @media (max-width: $md) {
+    font-size: 1rem;
+  }
+}
+
+element.style {
+  display: block;
+}
+.slick-next {
+  right: -25px;
+}
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  border: 1px solid $border !important;
+  border-radius: 20px;
+  color: #000 !important;
+
+  @media (max-width: 991px) {
+    top: 94%;
+    z-index: 5;
+  }
+}
+
+.slick-slider .slick-prev {
+  @media (max-width: 991px) {
+    left: 15px;
+  }
+}
+
+.slick-slider .slick-next {
+  @media (max-width: 991px) {
+    right: 15px;
+  }
+}
+
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+  color: $main;
+}
+
+.lg-react-element {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}

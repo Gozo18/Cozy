@@ -1,0 +1,12 @@
+.container {
+  margin: 1rem 5%;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.dashList {
+  display: flex;
+  flex-direction: column-reverse;
+}

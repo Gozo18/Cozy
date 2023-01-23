@@ -1,0 +1,87 @@
+@import "./variables.scss";
+
+.colorBox {
+  margin: 50px 0 0;
+  padding: 0 30%;
+  width: 100%;
+
+  @media (max-width: $md) {
+    margin: 0;
+    padding: 0 25%;
+  }
+
+  @media (max-width: 499px) {
+    padding: 0 5%;
+  }
+}
+
+.colorItem {
+  position: relative;
+  width: 100%;
+}
+
+.colorImage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 45vw;
+
+  @media (max-width: $md) {
+    height: 60vw;
+  }
+
+  @media (max-width: 499px) {
+    height: 110vw;
+  }
+}
+
+.colorSelectors {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+
+  div {
+    position: relative;
+    width: 15.5%;
+    height: 5vw;
+    outline-width: 0;
+    outline-style: solid;
+    outline-color: $main;
+    z-index: 5;
+    cursor: pointer;
+
+    @media (max-width: $md) {
+      height: 8vw;
+    }
+
+    @media (max-width: 499px) {
+      height: 13vw;
+    }
+
+    &:first-child {
+      outline-width: 3px;
+    }
+
+    p {
+      position: absolute;
+      bottom: -2vw;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 1.3vw;
+
+      @media (max-width: $md) {
+        bottom: -3vw;
+        font-size: 1.8vw;
+      }
+
+      @media (max-width: 499px) {
+        bottom: -5vw;
+        font-size: 3vw;
+      }
+    }
+  }
+}

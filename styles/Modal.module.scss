@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.modal {
+  padding: 20px;
+  max-width: 500px;
+  max-height: 600px;
+  border-radius: 8px;
+  background: $white;
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+}
+
+.body {
+  padding-top: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+}

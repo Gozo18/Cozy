@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+.container {
+  margin: 1rem 5%;
+
+  @media (max-width: $md) {
+    margin: 1rem 0;
+  }
+}
+
+.homeHeader {
+  text-align: center;
+}
+
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.contactImageBox {
+  margin-bottom: 30px;
+  border: 1px solid $border;
+  border-radius: 150px;
+}
+
+.contactImage {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  background-color: $white;
+  border: 20px solid $white;
+  border-radius: 150px;
+}
+
+.contacts {
+  /* padding: 5%; */
+  width: 100%;
+  background-color: $white;
+  /* border: 1px solid $border;
+  border-radius: 8px; */
+
+  div {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+    &:nth-child(odd) {
+      font-weight: 400;
+    }
+
+    &:nth-child(even) {
+      margin-bottom: 40px;
+    }
+
+    svg {
+      position: relative;
+      top: 3px;
+      margin-right: 5px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
