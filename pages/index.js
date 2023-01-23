@@ -7,13 +7,13 @@ import HomeIcons from "@/components/HomeIcons";
 import ColorSlider from "@/components/ColorSlider";
 import ColorSelect from "@/components/ColorSelect";
 
-export default function Home({ creations, offers }) {
+export default function Home() {
   return (
     <div className={styles.container}>
       <Heading />
       <HomeIcons />
 
-      {offers.length === 0 && (
+      {/* {offers.length === 0 && (
         <h2 className={styles.subheader}>Nic na prodej</h2>
       )}
       {offers.length > 0 && (
@@ -21,7 +21,7 @@ export default function Home({ creations, offers }) {
           <h2 className={styles.subheader}>Na prodej:</h2>
           <SimpleSlider offers={offers} />
         </div>
-      )}
+      )} */}
 
       {/* <div className={styles.listBox}>
         {creations.map((creation) => (
@@ -36,7 +36,9 @@ export default function Home({ creations, offers }) {
   );
 }
 
-export async function getStaticProps() {
+
+
+/* export async function getStaticProps() {
   const res1 = await fetch(`${API_URL}/creations?_sort=date:DESC&_limit=4`);
   const creations = await res1.json();
 
@@ -47,4 +49,4 @@ export async function getStaticProps() {
     props: { creations, offers },
     revalidate: 1,
   };
-}
+} */

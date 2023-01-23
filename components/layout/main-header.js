@@ -11,20 +11,10 @@ function MainHeader() {
 
   return (
     <header
-      className={
-        (router.pathname === "/nase-prace/[slug]") |
-        (router.pathname === "/[slug]")
-          ? styles.containerJobs
-          : styles.container
-      }
+      className={styles.container}
     >
       <div
-        className={
-          (router.pathname === "/nase-prace/[slug]") |
-          (router.pathname === "/[slug]")
-            ? styles.logoJobs
-            : styles.logo
-        }
+        className={styles.logo}
       >
         <Link href='/'>
           <a>
@@ -44,12 +34,14 @@ function MainHeader() {
             <span>Domů</span>
           </a>
         </Link>
-        <Link href='/nase-prace'>
+        
+        {/* <Link href='/nase-prace'>
           <a>
             <IoAlbumsOutline />
             <span>Naše práce</span>
           </a>
-        </Link>
+        </Link> */}
+
         <Link href='/kontakty'>
           <a>
             <IoPersonOutline />
