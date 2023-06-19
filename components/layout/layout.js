@@ -27,12 +27,12 @@ function Layout(props) {
   }, [])
   return (
     <Fragment>
-      <noscript
+      {/* <noscript
         dangerouslySetInnerHTML={{
           __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9WB66F"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }}
-      ></noscript>
+      ></noscript> */}
       {/* <MainHeader />
       {loading ? <Loader /> : <main>{props.children}</main>}
       <MainFooter /> */}
