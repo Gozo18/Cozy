@@ -1,14 +1,14 @@
-import Head from "next/head";
-import Layout from "@/components/layout/layout";
+import Head from "next/head"
+import Layout from "@/components/layout/layout"
 
-import "@/styles/globals.scss";
-import "lightgallery/scss/lightgallery.scss";
+import "@/styles/globals.scss"
+import "lightgallery/scss/lightgallery.scss"
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>Cozy Buddy - Výroba a oprava čalouněného nábytku</title>
+        {/* <title>Cozy Buddy - Výroba a oprava čalouněného nábytku</title>
         <meta name='title' content='Výroba a oprava čalouněného nábytku' />
         <meta
           name='description'
@@ -54,11 +54,11 @@ function MyApp({ Component, pageProps }) {
         <link
           href='https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap'
           rel='stylesheet'
-        ></link>
+        ></link> */}
       </Head>
       <Component {...pageProps} />
     </Layout>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

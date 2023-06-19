@@ -1,17 +1,17 @@
-import SimpleSlider from "@/components/slick/slider";
-import List from "@/components/list";
-import styles from "@/styles/Home.module.scss";
-import { API_URL } from "@/config/index";
-import Heading from "@/components/Heading";
-import HomeIcons from "@/components/HomeIcons";
-import ColorSlider from "@/components/ColorSlider";
-import ColorSelect from "@/components/ColorSelect";
+import SimpleSlider from "@/components/slick/slider"
+import List from "@/components/list"
+import styles from "@/styles/Home.module.scss"
+import { API_URL } from "@/config/index"
+import Heading from "@/components/Heading"
+import HomeIcons from "@/components/HomeIcons"
+import ColorSlider from "@/components/ColorSlider"
+import ColorSelect from "@/components/ColorSelect"
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Heading />
-      <HomeIcons />
+      {/* <Heading />
+      <HomeIcons /> */}
 
       {/* {offers.length === 0 && (
         <h2 className={styles.subheader}>Nic na prodej</h2>
@@ -30,13 +30,11 @@ export default function Home() {
       </div> */}
 
       {/* <ColorSlider /> */}
-      <h2 className={styles.subheader}>Výběr látek:</h2>
-      <ColorSelect />
+      {/* <h2 className={styles.subheader}>Výběr látek:</h2>
+      <ColorSelect /> */}
     </div>
-  );
+  )
 }
-
-
 
 /* export async function getStaticProps() {
   const res1 = await fetch(`${API_URL}/creations?_sort=date:DESC&_limit=4`);
