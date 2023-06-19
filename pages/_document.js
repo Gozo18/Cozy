@@ -9,7 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="cs">
-        <Head>
+        {/* <Head>
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-LMC7WYBLZS"
@@ -35,11 +35,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N9WB66F');`,
             }}
           />
-        </Head>
+        </Head> */}
         <body>
           {/* <Main />
           <NextScript /> */}
-          <div id="modal-root"></div>
+          {/* <div id="modal-root"></div> */}
         </body>
       </Html>
     )
